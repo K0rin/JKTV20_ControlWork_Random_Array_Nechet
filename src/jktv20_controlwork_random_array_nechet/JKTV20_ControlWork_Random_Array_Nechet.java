@@ -46,35 +46,12 @@ public class JKTV20_ControlWork_Random_Array_Nechet {
         for(int i = 0; i < array1nechet.length; i++){
             System.out.print(array1nechet[i]);
             System.out.print("; ");
-            if(i==9){
-                System.out.println("");
-            }
-            if(i==19){
-                System.out.println("");
-            }
-            if(i==29){
-                System.out.println("");
-            }
-            if(i==39){
-                System.out.println("");
-            }
-            if(i==49){
-                System.out.println("");
-            }
-            if(i==59){
-                System.out.println("");
-            }
-            if(i==69){
-                System.out.println("");
-            }
-            if(i==79){
-                System.out.println("");
-            }
-            if(i==89){
-                System.out.println("");
+            int j = i+1;
+            if(j%10 == 0 && i != array1nechet.length){
+                System.out.println();
             }
         }
-        System.out.println("]");
+        System.out.print("]");
         System.out.printf("сумма всех рандомных циифр в массиве array1 = %.3f%n", summ);
         double medium_summ = summ/array1nechet.length;
         System.out.printf("среднее арефмитическое рандомных циифр в массиве array1 = %.3f%n", medium_summ);
